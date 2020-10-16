@@ -20,8 +20,8 @@ define([], function () {
         })
 
         .after(1000, function () {
-            frame.model().title = '<h2 style="visibility:visible">So What is Distributed Consensus?</h2>'
-                        + '<h3 style="visibility:hidden;">Let\'s start with an example...</h3>'
+            frame.model().title = '<h2 style="visibility:visible">那么什么是分布式共识?</h2>'
+                        + '<h3 style="visibility:hidden;">下面让我们看一个例子🌰 ...</h3>'
                         + '<br/>' + frame.model().controls.html();
             layout.invalidate();
         })
@@ -39,7 +39,7 @@ define([], function () {
 
         .after(800, function () {
             frame.snapshot();
-            frame.model().subtitle = '<h2>Let\'s say we have a single node system</h2>'
+            frame.model().subtitle = '<h2>假设我们有一个「单节点系统」</h2>'
                            + frame.model().controls.html();
             layout.invalidate();
         })
@@ -56,7 +56,7 @@ define([], function () {
             layout.invalidate();
         })
         .after(600, function () {
-            frame.model().subtitle = '<h3>For this example, you can think of our <span style="color:steelblue">node</span> as a database server that stores a single value.</h3>'
+            frame.model().subtitle = '<h3>在此示例中，您可以将我们的<span style="color:steelblue">节点</span>视为存储单个值的数据库服务器。</h3>'
                            + frame.model().controls.html();
             layout.invalidate();
         })
@@ -75,7 +75,7 @@ define([], function () {
             layout.invalidate();
         })
         .after(1000, function () {
-            frame.model().subtitle = '<h3>We also have a <span style="color:green">client</span> that can send a value to the server.</h3>'
+            frame.model().subtitle = '<h3>我们还有一个<span style="color:green">客户端</span>，可以将值发送到服务器的。 </h3>'
                            + frame.model().controls.html();
             layout.invalidate();
         })
@@ -101,7 +101,7 @@ define([], function () {
         })
         .after(100, wait).indefinite()
         .after(100, function () {
-            frame.model().subtitle = '<h3>Coming to agreement, or <em>consensus</em>, on that value is easy with one node.</h3>'
+            frame.model().subtitle = '<h3>一个节点就可以很容易承认或达成<em>共识</em></h3>'
                            + frame.model().controls.html();
             layout.invalidate();
         })
@@ -110,7 +110,7 @@ define([], function () {
 
         .after(100, function () {
             frame.snapshot();
-            frame.model().subtitle = '<h3>But how do we come to consensus if we have multiple nodes?</h3>'
+            frame.model().subtitle = '<h3>但是，如果我们有多个节点，我们将如何达成共识呢？</h3>'
                            + frame.model().controls.html();
             layout.invalidate();
         })
@@ -127,7 +127,7 @@ define([], function () {
 
         .after(100, function () {
             frame.snapshot();
-            frame.model().subtitle = '<h3>That\'s the problem of <em>distributed consensus</em>.</h3>'
+            frame.model().subtitle = '<h3>这就是<em>分布式共识</em>的问题。</h3>'
                            + frame.model().controls.html();
             layout.invalidate();
         })
