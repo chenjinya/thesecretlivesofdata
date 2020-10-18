@@ -121,7 +121,7 @@ define(["../model/log_entry"], function (LogEntry) {
         .after(100, wait).indefinite()
         .after(100, function () {
             frame.snapshot();
-            model().subtitle = '<h2>如果它得到大多数 (n/2+1) 投票，那么 Candidate 将成为 Leader/h2>'
+            model().subtitle = '<h2>如果它得到大多数 (n/2+1) 投票，那么 Candidate 将成为 Leader</h2>'
                            + model().controls.html();
             layout.invalidate();
         })
